@@ -66,7 +66,7 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Net Notepad {"beta"}</h1>
+        <h1>Net Notepad {"beta-v"}</h1>
       </div>
       <form>
         <div className="notepad">
