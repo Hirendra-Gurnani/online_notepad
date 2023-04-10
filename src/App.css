@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
 .App {
   text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #208095;
 }
 
 .App-logo {
@@ -14,18 +18,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +33,116 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* notepad css starts here */
+/* CSS for computer screens */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #8ce4e5;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .notepad {
+    background-color: #ffffff;
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .notepad h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .notepad textarea {
+    width: 98.7%;
+    height: 400px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    border: none;
+    resize: none;
+  }
+
+  .bttnStyle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    float: right;
+  }
+
+  .notepad button {
+    background-color: #1f95bc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
+  }
+
+  .notepad button:hover {
+    background-color: #3e8e41;
+  }
+
+  .notepad select {
+    font-size: 18px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+  }
+
+  .notepad .format-buttons button {
+    background-color: transparent;
+    color: #333333;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  .notepad .format-buttons button:hover {
+    background-color: #cccccc;
+  }
+  .notepad textarea:focus-visible {
+    outline: 3px solid #2ca0b7;
+  }
+}
+
+[type="submit"] {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-self: center; */
+  float: none !important;
+}
+
+#filename {
+  font-size: 18px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 246px;
+  max-width: 300px;
+}
+
+#filename:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px #0077ff;
 }
