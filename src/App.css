@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 .App {
   text-align: center;
   font-size: calc(10px + 2vmin);
@@ -27,89 +27,91 @@
 }
 
 /* notepad css starts here */
-/* CSS for computer screens */
-@media screen and (min-width: 768px) {
-  body {
-    background-color: #8ce4e5;
-    font-family: "Montserrat", sans-serif;
-  }
 
-  .notepad {
-    background-color: #ffffff;
-    margin: 50px auto;
-    width: 80%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+body {
+  background-color: #8ce4e5;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .notepad h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333333;
-  }
+.notepad {
+  background-color: #ffffff;
+  margin: 50px auto;
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .notepad textarea {
-    width: 98.7%;
-    height: 400px;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 1.5;
-    border: none;
-    resize: none;
-  }
+.notepad h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+}
 
-  .bttnStyle {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 20%;
-    float: right;
-  }
+.notepad textarea {
+  width: 98.7%;
+  height: 500px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.5;
+  border: 2px solid transparent;
+  border-top: 2px solid black;
+  resize: none;
+}
 
-  .notepad button {
-    background-color: #1f95bc;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    float: right;
-  }
+.bttnStyle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  float: right;
+}
 
-  .notepad button:hover {
-    background-color: #3e8e41;
-  }
+.notepad button {
+  background-color: #1f95bc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  /* font-weight: 100; */
+  float: right;
+}
 
-  .notepad select {
-    font-size: 18px;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    background-color: #ffffff;
-    color: #333333;
-    cursor: pointer;
-  }
+.notepad button:hover {
+  background-color: #8ce4e5;
+  color: #208095;
+}
 
-  .notepad .format-buttons button {
-    background-color: transparent;
-    color: #333333;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    font-size: 18px;
-  }
+.notepad select {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
 
-  .notepad .format-buttons button:hover {
-    background-color: #cccccc;
-  }
-  .notepad textarea:focus-visible {
-    outline: 3px solid #2ca0b7;
-  }
+.notepad .format-buttons button {
+  background-color: transparent;
+  color: #333333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  /* margin-right: 10px; */
+  font-size: 18px;
+}
+
+.notepad .format-buttons button:hover {
+  background-color: #cccccc;
+}
+.notepad textarea:focus-visible {
+  border: 2px solid #2ca0b7;
 }
 
 [type="submit"] {
@@ -117,16 +119,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-self: center; */
   float: none !important;
 }
 
 #filename {
   font-size: 18px;
-  padding: 6px 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-right: 10px;
   margin-bottom: 10px;
   min-width: 246px;
   max-width: 300px;
@@ -136,7 +136,4 @@
   outline: none;
   border-color: #0077ff;
   box-shadow: 0 0 0 2px #0077ff;
-}
-input:blank{
-  outline: 1px red;
 }

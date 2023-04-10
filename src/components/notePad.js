@@ -70,7 +70,7 @@ function Notepad() {
       </div>
       <form>
         <div className="notepad">
-          <div className="notepad-field">
+          <div className="toolbar">
             <input
               id="filename"
               type="text"
@@ -80,8 +80,6 @@ function Notepad() {
               required
               title="Please give a name for the file here"
             />
-          </div>
-          <div className="toolbar">
             <select value={fontFamily} onChange={handleFontFamilyChange}>
               <option value="Arial">Arial</option>
               <option value="Helvetica">Helvetica</option>
@@ -109,23 +107,23 @@ function Notepad() {
                 onClick={handleBoldClick}
                 className={bold ? "active" : ""}
               >
-                <b>B</b>
+                Bold
               </button>
               <button
                 onClick={handleItalicClick}
                 className={italic ? "active" : ""}
               >
-                <i>I</i>
+                <i>Italic</i>
               </button>
               <button
                 onClick={handleUnderlineClick}
                 className={underline ? "active" : ""}
               >
-                <u>U</u>
+                <u>Underline</u>
               </button>
             </div>
           </div>
-          <hr />
+
           {/* <form> */}
           <textarea
             style={getStyle()}
