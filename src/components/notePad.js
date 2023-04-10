@@ -66,7 +66,7 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Notepad Online</h1>
+        <h1>Net Notepad</h1>
       </div>
       <form>
         <div className="notepad">
