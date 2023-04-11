@@ -66,7 +66,7 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Net Notepad</h1>{"beta-v"}
+        <h1>Net Notepad<span style={"fontSize" = "12px"}>{"beta-v"}</span></h1>
       </div>
       {/* <form> */}
         <div className="notepad">
