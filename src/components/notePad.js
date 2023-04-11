@@ -124,7 +124,7 @@ function Notepad() {
             </div>
           </div>
 
-          <form>
+          {/* <form> */}
           <textarea
             style={getStyle()}
             value={value}
@@ -134,7 +134,7 @@ function Notepad() {
           <button onClick={handleSave} type="submit">
             Save
           </button>
-          </form>
+          {/* </form> */}
         </div>
       {/* </form> */}
     </>
