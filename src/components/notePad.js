@@ -66,9 +66,9 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Net Notepad {"beta-v"}</h1>
+        <h1>Net Notepad</h1>{"beta-v"}
       </div>
-      <form>
+      {/* <form> */}
         <div className="notepad">
           <div className="toolbar">
             <input
@@ -124,7 +124,7 @@ function Notepad() {
             </div>
           </div>
 
-          {/* <form> */}
+          <form>
           <textarea
             style={getStyle()}
             value={value}
@@ -134,9 +134,9 @@ function Notepad() {
           <button onClick={handleSave} type="submit">
             Save
           </button>
-          {/* </form> */}
+          </form>
         </div>
-      </form>
+      {/* </form> */}
     </>
   );
 }
