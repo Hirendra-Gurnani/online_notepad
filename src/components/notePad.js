@@ -130,6 +130,7 @@ function Notepad() {
             value={value}
             onChange={handleChange}
             placeholder="Enter your text here..."
+            required
           />
           <button onClick={handleSave} type="submit">
             Save
