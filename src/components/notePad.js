@@ -6,9 +6,9 @@ function Notepad() {
   const [value, setValue] = useState("");
   const [fontFamily, setFontFamily] = useState("Arial");
   const [fontSize, setFontSize] = useState("16px");
-  const [bold, setBold] = useState(false);
-  const [italic, setItalic] = useState(false);
-  const [underline, setUnderline] = useState(false);
+  // const [bold, setBold] = useState(false);
+  // const [italic, setItalic] = useState(false);
+  // const [underline, setUnderline] = useState(false);
   const [fileName, setFileName] = useState(``);
 
   const handleChange = (event) => {
@@ -23,17 +23,17 @@ function Notepad() {
     setFontSize(event.target.value);
   };
 
-  const handleBoldClick = () => {
-    setBold(!bold);
-  };
+  // const handleBoldClick = () => {
+  //   setBold(!bold);
+  // };
 
-  const handleItalicClick = () => {
-    setItalic(!italic);
-  };
+  // const handleItalicClick = () => {
+  //   setItalic(!italic);
+  // };
 
-  const handleUnderlineClick = () => {
-    setUnderline(!underline);
-  };
+  // const handleUnderlineClick = () => {
+  //   setUnderline(!underline);
+  // };
 
   const handleSave = () => {
     if (fileName === "" || fileName === null || fileName === 0) {
@@ -49,15 +49,15 @@ function Notepad() {
 
   const getStyle = () => {
     let style = {};
-    if (bold) {
-      style.fontWeight = "bold";
-    }
-    if (italic) {
-      style.fontStyle = "italic";
-    }
-    if (underline) {
-      style.textDecoration = "underline";
-    }
+    // if (bold) {
+    //   style.fontWeight = "bold";
+    // }
+    // if (italic) {
+    //   style.fontStyle = "italic";
+    // }
+    // if (underline) {
+    //   style.textDecoration = "underline";
+    // }
     style.fontFamily = fontFamily;
     style.fontSize = fontSize;
     return style;
@@ -66,7 +66,7 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Net Notepad<span style={"fontSize" = "12px"}>{"beta-v"}</span></h1>
+        <h1>Net Notepad<span>{"beta-v"}</span></h1>
       </div>
       {/* <form> */}
         <div className="notepad">
@@ -102,7 +102,7 @@ function Notepad() {
               <option value="22px">22</option>
               <option value="24px">24</option>
             </select>
-            <div className="bttnStyle">
+            {/* <div className="bttnStyle">
               <button
                 onClick={handleBoldClick}
                 className={bold ? "active" : ""}
@@ -121,7 +121,7 @@ function Notepad() {
               >
                 <u>Underline</u>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* <form> */}
