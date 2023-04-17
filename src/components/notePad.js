@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { saveAs } from "file-saver";
 import fileDownload from "react-file-download";
+import MyImages from  "./constant"
 
 function Notepad() {
   const [value, setValue] = useState("");
@@ -66,7 +67,7 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1>Net Notepad<span>{"beta-v"}</span></h1>
+        <h1><img src={MyImages.logo} height={"50px"} alt="Notepad-Online" srcset="" />&nbsp;&nbsp;Net Notepad<span>{"beta-v"}</span></h1>
       </div>
       {/* <form> */}
         <div className="notepad">
