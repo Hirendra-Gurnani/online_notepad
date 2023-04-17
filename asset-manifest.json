@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/online_notepad/static/css/main.88b06bd1.css",
-    "main.js": "/online_notepad/static/js/main.fd831198.js",
+    "main.css": "/online_notepad/static/css/main.b789c87f.css",
+    "main.js": "/online_notepad/static/js/main.da99450a.js",
     "static/js/787.1f50f65d.chunk.js": "/online_notepad/static/js/787.1f50f65d.chunk.js",
+    "static/media/logo.svg": "/online_notepad/static/media/logo.96d8aac16ae8edb8f55ca27107ac3d42.svg",
     "index.html": "/online_notepad/index.html",
-    "main.88b06bd1.css.map": "/online_notepad/static/css/main.88b06bd1.css.map",
-    "main.fd831198.js.map": "/online_notepad/static/js/main.fd831198.js.map",
+    "main.b789c87f.css.map": "/online_notepad/static/css/main.b789c87f.css.map",
+    "main.da99450a.js.map": "/online_notepad/static/js/main.da99450a.js.map",
     "787.1f50f65d.chunk.js.map": "/online_notepad/static/js/787.1f50f65d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88b06bd1.css",
-    "static/js/main.fd831198.js"
+    "static/css/main.b789c87f.css",
+    "static/js/main.da99450a.js"
   ]
 }
