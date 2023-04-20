@@ -67,9 +67,9 @@ function Notepad() {
   return (
     <>
       <div className="App App-header">
-        <h1><img src={MyImages.logo} height={"50px"} alt="Notepad-Online" srcset="" />&nbsp;&nbsp;Net Notepad<span>{"beta-v"}</span></h1>
+        <h1><img src={MyImages.logo} height={"50px"} alt="Notepad-Online"/>&nbsp;&nbsp;Net Notepad<span>{"beta-v"}</span></h1>
       </div>
-      {/* <form> */}
+   
         <div className="notepad">
           <div className="toolbar">
             <input

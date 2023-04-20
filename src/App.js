@@ -2,7 +2,11 @@ import "./App.css";
 import Notepad from "./components/notePad";
 
 function App() {
-  return <Notepad />;
+  return (
+    <>
+      <Notepad />
+    </>
+  );
 }
 
 export default App;
